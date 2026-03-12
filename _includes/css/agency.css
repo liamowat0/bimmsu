@@ -621,6 +621,16 @@ section h3.section-subheading {
     border: 7px solid #fff;
 }
 
+.team-member img.executive-board-photo {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
 .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
