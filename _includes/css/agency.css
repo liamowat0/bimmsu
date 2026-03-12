@@ -8,7 +8,12 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
-    background-color: #f3f4f6
+    background-color: #f5f6f7;
+}
+
+:root {
+    --section-bg-main: #eceff1;
+    --section-bg-contrast: #f5f6f7;
 }
 
 .text-muted {
@@ -63,7 +68,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: var(--section-bg-main);
 }
 
 .bg-darkest-gray {
@@ -289,6 +294,17 @@ header.hero-header {
 
 section {
     padding: 100px 0;
+}
+
+section#services,
+section#team,
+section#contact {
+    background-color: var(--section-bg-main);
+}
+
+section#about,
+aside.clients {
+    background-color: var(--section-bg-contrast);
 }
 
 section h2.section-heading {
@@ -620,14 +636,11 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: none;
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: inherit;
 }
 
 section#contact .form-group {
