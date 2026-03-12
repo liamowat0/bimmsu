@@ -265,10 +265,11 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-header {
+header.hero-header {
+    height: 100vh;
     min-height: 100vh;
     background-attachment: scroll;
-    background-image: url('/bimmsu/img/bimhomepage.png');
+    background-image: url("{{ "/img/bimhomepage.png" | prepend: site.baseurl }}");
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
