@@ -656,7 +656,7 @@ aside.clients img {
 
 section#contact {
     position: relative;
-    background-image: url('/bimmsu/img/contactbackground.png');
+    background-image: url('{{ "/img/contactbackground.png" | prepend: site.baseurl }}');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
