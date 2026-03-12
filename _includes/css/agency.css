@@ -475,9 +475,18 @@ section h3.section-subheading {
     margin-left: 0;
     border: 7px solid #b8b8b8;
     border-radius: 100%;
+    overflow: hidden;
     text-align: center;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
+}
+
+.timeline>li .timeline-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .timeline>li .timeline-image h4 {
