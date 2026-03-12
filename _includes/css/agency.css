@@ -655,11 +655,34 @@ aside.clients img {
 }
 
 section#contact {
-    background-image: none;
+    position: relative;
+    background-image: url('../img/contactbackground.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+section#contact .container {
+    position: relative;
+    z-index: 1;
 }
 
 section#contact .section-heading {
-    color: inherit;
+    color: #fff;
+}
+
+section#contact .section-subheading {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 section#contact .form-group {
@@ -679,6 +702,12 @@ section#contact .form-group textarea.form-control {
     height: 236px;
 }
 
+section#contact .form-control {
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #2f2f2f;
+    border-color: rgba(255, 255, 255, 0.95);
+}
+
 section#contact .form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
@@ -688,28 +717,28 @@ section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #666;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #666;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #666;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
-    color: #bbb;
+    color: #666;
 }
 
 section#contact .text-danger {
