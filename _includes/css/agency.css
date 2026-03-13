@@ -709,9 +709,22 @@ section#contact .contact-form-column {
 
 section#contact .contact-description {
     margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 16px;
-    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    list-style-position: outside;
+    padding-left: 24px;
+}
+
+section#contact .contact-description li {
+    margin-bottom: 12px;
+}
+
+section#contact .contact-description li:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
