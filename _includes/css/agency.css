@@ -685,6 +685,47 @@ section#contact .section-subheading {
     color: rgba(255, 255, 255, 0.85);
 }
 
+section#contact .contact-split-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+section#contact .contact-info-column,
+section#contact .contact-form-column {
+    margin-bottom: 30px;
+}
+
+section#contact .contact-info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+section#contact .contact-form-column {
+    padding-left: 30px;
+}
+
+section#contact .contact-description {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+@media (max-width: 991px) {
+    section#contact .contact-info-column,
+    section#contact .contact-form-column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    section#contact .contact-info-column {
+        margin-bottom: 45px;
+    }
+}
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
